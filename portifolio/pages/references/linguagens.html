@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Igor Torres de Pádua">
+    <link rel="icon" type="image/x-icon" href="../src/img/icons/favicon.ico">
+    <link rel="stylesheet" href="/portifolio/src/css/style.css">
+    <title>Linguagens</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>O que são Linguagens de Programação</h1>
+    </header>
+
+    <section>
+        <p>
+            Podemos imaginar o computador como uma super calculadora, capaz de fazer cálculos muito mais rápido que nós, mas para isso devemos dizer para o computador o que deve ser calculado e como deve ser calculado. A função das linguagens de programação é exatamente
+            essa, ou seja, servir de um meio de comunicação entre computadores e humanos.
+        </p>
+
+        <p>
+            Existem dois tipos de linguagens de programação: as de baixo nível e as de alto nível. Os computadores interpretam tudo como números em base binária, ou seja, só entendem zero e um. As linguagens de baixo nível são interpretadas diretamente pelo computador,
+            tendo um resultado rápido, porém é muito difícil e incômodo se trabalhar com elas. Exemplos de linguagens de baixo nível são a linguagem binária e a linguagem Assembly.
+        </p>
+
+        <p>Exemplo de código em Assembly:</p>
+        <p>MOV r0, #0C ;load base address of string into r0 LOAD: MOV r1,(r0) ;load contents into r1 CALL PRINT ; call a print routine to print the character in r1 INC r0 ;point to next character JMP LOAD ;load next character</p>
+        <p>Como pode-se notar, é uma linguagem bastante complicada.</p>
+        <p>Já as linguagens de alto nível são mais fáceis de se trabalhar e de entender, as ações são representadas por palavras de ordem (exemplo faça, imprima, etc) geralmente em inglês, foram feitos assim para facilitar a memorização e a lógica. Elas
+            não são interpretadas diretamente pelo computador, sendo necessário traduzí-las para linguagem binária utilizando-se de um programa chamado compilador.</p>
+        <p>Quando programamos em uma linguagem de programação de alto nível primeiramente criamos um arquivo de texto comum contendo a lógica do programa, ou seja, é onde falamos ao computador como deve ser feito o que queremos. Este arquivo de texto é chamado
+            de código-fonte, cada palavra de ordem dentro do código-fonte é chamada de instrução. Após criarmos o código-fonte devemos traduzir este arquivo para linguagem binária usando o compilador correspondente com a linguagem na qual estamos programando.
+            O compilador irá gerar um segundo arquivo que chamamos de executável ou programa, este arquivo gerado é interpretado diretamente pelo computador.</p>
+
+        <p>Existem algumas linguagens de programação que não necessitam de compiladores, como o PHP, uma linguagem dedicada à produção de websites dinâmicos, como o InfoEscola. As instruções em PHP são compiladas e executadas ao mesmo tempo.</p>
+        <p>Exemplo de código PHP (alto nível)</p>
+
+
+        <blockquote class="blockq">
+            <code>print("Bem vindos visitantes do InfoEscola!");<br>
+                &nbsp;&nbsp;{<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(" Vamos contar até 50:");
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for($x=1; $x<=50;$x++) {<br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print $x; print " ";<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(4==2 ) {<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ( "Fim do mundo! 4 é igual a 2!");<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print ( "Ufa! 4 é diferente de 2");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;}
+            </code>
+        </blockquote>
+        <p>
+
+        </p>
+        <p>
+            Cada linguagem de programação é diferente da outra, contendo palavras-chave próprias. Exemplos de linguagens de alto nível são <a class="link-contido" href="/portifolio/pages/references/c++.html">C++</a>, <a class="link-contido" href="/portifolio/pages/references/java.html">Java</a>,
+            <a class="link-contido" href="/portifolio/pages/references/csharp.html">C#</a>, Delphi (Pascal), <a class="link-contido" href="/portifolio/pages/references/php.html">PHP</a>, Visual Basic, etc.</p>
+    </section>
+
+    <footer>
+        <a class="return" href="/portifolio/index.html">Home</a>
+    </footer>
+</body>
+
+</html>
